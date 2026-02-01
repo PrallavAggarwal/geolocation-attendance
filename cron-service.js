@@ -1,5 +1,5 @@
 import cron from "node-cron";
-import { admin, db } from "./config/firebaseAdmin";
+import { admin, db } from "./config/firebaseAdmin.js";
 
 // Run every day at 1:30 AM IST (cron uses server timezone – adjust if needed)
 cron.schedule("30 1 * * *", async () => {
